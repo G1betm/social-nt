@@ -1,0 +1,46 @@
+.content {
+    grid-area: content;
+}
+
+.user {
+    display: flex;
+    gap: 30px;
+}
+
+.userAvatar {
+    max-width: 200px;
+}
+
+.userInfo ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.currentPostsAvatar {
+    max-width: 50px;
+    height: auto;
+}
+
+.newPost {
+    text-align: right;
+}
+
+.newPost textarea {
+    width: -webkit-fill-available;
+    margin-bottom: 20px;
+}
+
+.currentPosts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contentBanner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contentBanner img {
+    display: block;
+}

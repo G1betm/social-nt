@@ -1,38 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap');
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    background-color: initial;
+    border: none;
+    text-decoration: none;
+}
+
+textarea {
+    padding: 20px;
+    border: 1px solid #e6e2e2;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+}
+
 .App {
-  text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav content content";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    max-width: 1550px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.rounded {
+    border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shadow {
+    box-shadow: 0 8px 30px rgb(0 0 0 / 5%);
+}
+.content-flat {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.page-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+    background-color: #10d876;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    color: #fff;
+    font-family: inherit;
 }
